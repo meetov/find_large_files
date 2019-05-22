@@ -1,3 +1,8 @@
+#!/bin/sh
+## Usage: find_large_files START_DIR [LIMIT]
+## Description: Find large files up to LIMIT and display them to stdout.
+## Author: Mario Mitov
+
 SCRIPT_NAME=$(basename $0)
 START_DIR=$1
 LIMIT=$2
