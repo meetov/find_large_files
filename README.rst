@@ -7,4 +7,3 @@ TODO
 ----
 
 * choose between files and/or directories
-* check whether args to `find` be proxied

@@ -16,7 +16,7 @@ for RESULT in ${RESULTS}
 do
 	FILE_SIZE_B=$(echo "${RESULT}" | cut -d ';' -f 1) 
 	# for some reason the %s sometimes returns a filename instead of size as integer
-	if ! [[ $FILE_SIZE_B =~ ^[0-9]+$ ]]; then  
+	if ! [[ ${FILE_SIZE_B} =~ ^[0-9]+$ ]]; then  
 		continue 
 	else
 		FILE_NAME=$(echo "${RESULT}" | cut -d ';' -f 2)
